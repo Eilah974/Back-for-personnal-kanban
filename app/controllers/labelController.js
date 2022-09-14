@@ -2,7 +2,7 @@ const { Label } = require('../models');
 const { ApiError } = require('../helpers/errorHandler');
 
 const labelController = {
-    getLables: async (req, res) => {
+    getLabels: async (req, res) => {
         // méthode pour récupérer les labels
         const labels = await Label.findAll();
         return res.json(labels);
