@@ -25,7 +25,7 @@ const cardController = {
         });
         // on vérifie si la carte existe
         if (!card) {
-            throw new ApiError(`Acune carte à l'id ${id}`, { statusCode: 404 });
+            throw new ApiError(`Aucune carte à l'id ${id}`, { statusCode: 404 });
         }
 
         // si carte
@@ -57,13 +57,13 @@ const cardController = {
     },
 
     updateCard: async (req, res) => {
-        // méthode pour mettre à jour une quête
+        // méthode pour mettre à jour une carte
         const { id } = req.params;
         const card = await Card.findByPk(id);
 
         // on vérifie si la carte existe
         if (!card) {
-            throw new ApiError(`Acune carte à l'id ${id}`, { statusCode: 404 });
+            throw new ApiError(`Aucune carte à l'id ${id}`, { statusCode: 404 });
         }
 
         const {
@@ -102,7 +102,7 @@ const cardController = {
 
         // on vérifie si la carte existe
         if (!card) {
-            throw new ApiError(`Acune carte à l'id ${id}`, { statusCode: 404 });
+            throw new ApiError(`Aucune carte à l'id ${id}`, { statusCode: 404 });
         }
 
         // si carte, on la supprime
