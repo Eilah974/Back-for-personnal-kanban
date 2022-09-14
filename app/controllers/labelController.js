@@ -64,7 +64,7 @@ const labelController = {
         const labelSaved = await label.save();
         return res.json(labelSaved);
     },
-    // supprimer un label
+
     delete: async (req, res) => {
         // méthode pour supprimer un label
         const { id } = req.params;
