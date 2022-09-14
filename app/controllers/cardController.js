@@ -109,6 +109,63 @@ const cardController = {
         await card.destroy();
         return res.json('Carte supprimée');
     },
+
+    addLabelToCard: async (req, res) => {
+        // méthode pour ajouter un label à une carte
+        const { cardId, labelId } = req.params;
+        // on récupère la carte
+        const card = await Card.findByPk(cardId, {
+            include: 'labels',
+        });
+
+        // on verifie si la carte existe
+        if (!card) {
+            throw new ApiError(`Acune carte à l'id ${cardId}`, { statusCode: 404 });
+        }
+
+        // on récupère le label
+        const label = await Label.findByPk(labelId);
+
+        // on vérifie si le label existe
+        if (!label) {
+            throw new ApiError(`Acun label à l'id ${labelId}`, { statusCode: 404 });
+        }
+
+        // on ajoute le label à la carte
+        await card.addLabel(label);
+        // on recharge la carte pour voir la modification
+        await card.reload();
+
+        return res.json(card);
+    },
+
+    removeLabelFromCard: async (req, res) => {
+        // méthode pour retirer un label à une carte
+        const { cardId, labelId } = req.params;
+        const card = await Card.findByPk(cardId, {
+            include: 'labels',
+        });
+
+        // on verifie si la carte existe
+        if (!card) {
+            throw new ApiError(`Acune carte à l'id ${cardId}`, { statusCode: 404 });
+        }
+
+        // on récupère le label
+        const label = await Label.findByPk(labelId);
+
+        // on vérifie si le label existe
+        if (!label) {
+            throw new ApiError(`Acun label à l'id ${labelId}`, { statusCode: 404 });
+        }
+
+        // on retire le label à la carte
+        await card.removeLabel(label);
+        // on recharge la carte pour voir la modification
+        await card.reload();
+
+        return res.json(card);
+    },
 };
 
 module.exports = cardController;
