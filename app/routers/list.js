@@ -10,7 +10,7 @@ router
     .post(controllersHandler(listController.createList));
 
 router
-    .router('/:id')
+    .route('/:id')
     .get(controllersHandler(listController.readList))
     .put(controllersHandler(listController.updateList))
     .delete(controllersHandler(listController.delete));
