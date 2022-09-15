@@ -15,7 +15,7 @@ Don't forget to create yourself a .env and sqitch.conf file using your own infor
 
 ## API related routes (with CRUD)
 ### For cards
-=> Get the set of cards and create a cards (get and post methods): 
+=> Get the set of cards and create a card (get and post methods): 
 ```
 /cards
 ```
