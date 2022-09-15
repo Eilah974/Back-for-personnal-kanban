@@ -17,7 +17,7 @@ const labelController = {
             throw new ApiError(`Aucun label à l'id ${id}`, { statusCode: 404 });
         }
 
-        // si carte
+        // si label
         return res.json(label);
     },
 
@@ -77,7 +77,7 @@ const labelController = {
 
         // si label, on la supprime
         await label.destroy();
-        return res.json('Carte supprimée');
+        return res.json('Label supprimé');
     },
 };
 
