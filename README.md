@@ -1,5 +1,5 @@
 # Back-for-personnal-kanban
-This is a mini backend API project for a custom kanba.
+This is a mini backend API project for a custom kanban.
 
 ---
 
