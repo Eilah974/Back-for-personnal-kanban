@@ -1,69 +1,69 @@
 # Back-for-personnal-kanban
-Ceci est un mini projet d'API backend pour un kanban perso.
+This is a mini backend API project for a custom kanba.
 
 ---
 
-## Pour tester l'API
-=> Créer votre base de données avec PostgreSQL.  
-=> Faire les migrations avec Sqitch en faisant sqitch deploy.  
-=> Importer le seeding de test.  
-=> Lancer le serveur via npm run dev.  
+## To test the API
+=> Create your database with PostgreSQL.  
+=> Do migrations with Sqitch by doing sqitch deploy.  
+=> Import test seeding.  
+=> Launch server with npm run dev.  
 
-N'oubliez pas de vous créer un fichier .env et sqitch.conf en utilisant vos propres informations (cf: .env.example et sqitch.example.conf)
+Don't forget to create yourself a .env and sqitch.conf file using your own information (cf: .env.example and sqitch.example.conf).
 
 ---
 
-## Les routes liées à l'API (avec CRUD)
-### Pour les cartes
-=> Avoir l'ensemble des cartes et créer une carte (méthodes get et post): 
+## API related routes (with CRUD)
+### For cards
+=> Get the set of cards and create a cards (get and post methods): 
 ```
 /cards
 ```
 
-=> Avoir le détail d'une carte, la modifier ou la supprimer (méthodes get, put et delete):
+=> Get the card's detail, modify it or delete it (get, put and delete methods):
 ```
 /cards/:id
 ```
 
-=> Ajouter ou supprimer des labels sur la carte (méthodes post et delete):
+=> Add or remove labels on the map (post and delete methods):
 ```
 /cards/:cardId/label/:labelId
 ```
 
-### Pour les labels
-==> Avoir l'ensemble des labels et créer un label (méthodes get et post): 
+### For labels
+==> Get the set of labels and create a label (get and post methods): 
 ```
 /labels
 ``` 
 
-=> Avoir le détail d'un label, le modifier ou le supprimer (méthodes get, put et delete):
+=> Get the label's detail, modify it or delete it (get, put and delete methods):
 ```
 /labels/:id
 ```
 
-### Pour les listes
-==> Avoir l'ensemble des listes et créer une liste (méthodes get et post): 
+### For lists
+==> Get the set of lists and create a list (get and post methods): 
 ```
 /lists
 ``` 
 
-=> Avoir le détail d'une liste, la modifier ou la supprimer (méthodes get, put et delete):
+=> Get the list's detail, modify it or delete it (get, put and delete methods):
 ```
 /lists/:id
 ```
 
-=> Voir les cartes associées à une liste (méthode get):
+=> See cards associated with a list (get method):
 ```
 /lists/:id/cards
 ```
 
 ---
 
-## Technos utilisées
-Pour ce mini projet d'API back pour kanban perso, voici la liste des technos utilisées:  
+## Technologies used
+For this mini back API project for personal kanban, here is the list of technologies used:  
 => Node.JS et express  
 => Sequelize (ORM)  
-=> Sqitch (pour les migrations)  
-=> PostgreSQL (base de donées)  
+=> Sqitch (for migrations)  
+=> PostgreSQL (datbase)  
 
 ---
