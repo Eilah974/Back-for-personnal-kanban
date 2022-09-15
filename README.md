@@ -9,7 +9,7 @@ This is a mini backend API project for a custom kanba.
 => Import test seeding.  
 => Launch server with npm run dev.  
 
-Don't forget to create yourself a .env and sqitch.conf file using your own information (cf: .env.example and sqitch.example.conf).
+Don't forget to create yourself a .env and sqitch.conf file using your own informations (cf: .env.example and sqitch.example.conf).
 
 ---
 
