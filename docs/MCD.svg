@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="540" height="120" viewBox="0 0 540 120" xmlns="http://www.w3.org/2000/svg">
+<rect id="frame" x="0" y="0" width="540" height="120" fill="#f5f5f5" stroke="none" stroke-width="0"/>
+
+<!-- Association OWNS -->
+<g class="page_0_PnDdDE8H diagram_page" visibility="visible">
+	<line x1="39" y1="60" x2="128" y2="60" stroke="#bf812d" stroke-width="2"/>
+	<text x="74" y="77" fill="#01665e" font-family="Verdana" font-size="12">0,N</text>
+	<line x1="221" y1="60" x2="128" y2="60" stroke="#bf812d" stroke-width="2"/>
+	<text x="161" y="77" fill="#01665e" font-family="Verdana" font-size="12">1,1</text>
+	<g>
+		<path d="M141 35 a14 14 90 0 1 14 14 V60 h-54 V49 a14 14 90 0 1 14 -14" fill="#dfc27d" stroke="#dfc27d" stroke-width="0"/>
+		<path d="M155 60 v11 a14 14 90 0 1 -14 14 H115 a14 14 90 0 1 -14 -14 V60 H54" fill="#f6e8c3" stroke="#f6e8c3" stroke-width="0"/>
+		<rect x="101" y="35" width="54" height="50" fill="none" rx="14" stroke="#bf812d" stroke-width="2"/>
+		<line x1="101" y1="60" x2="155" y2="60" stroke="#bf812d" stroke-width="1"/>
+		<text x="108" y="52.75" fill="#000" font-family="Verdana" font-size="12">OWNS</text>
+	</g>
+</g>
+
+<!-- Association IS CATEGORIZED BY -->
+<g class="page_0_PnDdDE8H diagram_page" visibility="visible">
+	<line x1="221" y1="60" x2="358" y2="60" stroke="#bf812d" stroke-width="2"/>
+	<text x="260" y="77" fill="#01665e" font-family="Verdana" font-size="12">0,N</text>
+	<line x1="496" y1="60" x2="358" y2="60" stroke="#bf812d" stroke-width="2"/>
+	<text x="434" y="77" fill="#01665e" font-family="Verdana" font-size="12">0,N</text>
+	<g>
+		<path d="M415 35 a14 14 90 0 1 14 14 V60 h-142 V49 a14 14 90 0 1 14 -14" fill="#dfc27d" stroke="#dfc27d" stroke-width="0"/>
+		<path d="M429 60 v11 a14 14 90 0 1 -14 14 H301 a14 14 90 0 1 -14 -14 V60 H142" fill="#f6e8c3" stroke="#f6e8c3" stroke-width="0"/>
+		<rect x="287" y="35" width="142" height="50" fill="none" rx="14" stroke="#bf812d" stroke-width="2"/>
+		<line x1="287" y1="60" x2="429" y2="60" stroke="#bf812d" stroke-width="1"/>
+		<text x="295" y="52.75" fill="#000" font-family="Verdana" font-size="12">IS CATEGORIZED BY</text>
+	</g>
+</g>
+
+<!-- Entity LIST -->
+<g class="page_0_PnDdDE8H diagram_page" visibility="visible">
+	<g>
+		<rect x="9" y="18" width="60" height="25" fill="#80cdc1" stroke="#80cdc1" stroke-width="0" opacity="1"/>
+		<rect x="9" y="43" width="60" height="59" fill="#c7eae5" stroke="#c7eae5" stroke-width="0" opacity="1"/>
+		<rect x="9" y="18" width="60" height="84" fill="none" stroke="#35978f" stroke-width="2" opacity="1"/>
+		<line x1="9" y1="43" x2="69" y2="43" stroke="#35978f" stroke-width="1"/>
+	</g>
+	<text x="25" y="35.75" fill="#000" font-family="Verdana" font-size="12">LIST</text>
+	<text x="14" y="60.8" fill="#000" font-family="Verdana" font-size="12">listCode</text>
+	<line x1="14" y1="63" x2="63" y2="63" stroke="#000" stroke-width="1"/>
+	<text x="14" y="77.8" fill="#000" font-family="Verdana" font-size="12">name</text>
+	<text x="14" y="94.8" fill="#000" font-family="Verdana" font-size="12">position</text>
+</g>
+
+<!-- Entity CARD -->
+<g class="page_0_PnDdDE8H diagram_page" visibility="visible">
+	<g>
+		<rect x="187" y="9" width="68" height="25" fill="#80cdc1" stroke="#80cdc1" stroke-width="0" opacity="1"/>
+		<rect x="187" y="34" width="68" height="77" fill="#c7eae5" stroke="#c7eae5" stroke-width="0" opacity="1"/>
+		<rect x="187" y="9" width="68" height="102" fill="none" stroke="#35978f" stroke-width="2" opacity="1"/>
+		<line x1="187" y1="34" x2="255" y2="34" stroke="#35978f" stroke-width="1"/>
+	</g>
+	<text x="204" y="26.75" fill="#000" font-family="Verdana" font-size="12">CARD</text>
+	<text x="192" y="51.8" fill="#000" font-family="Verdana" font-size="12">cardCode</text>
+	<line x1="192" y1="54" x2="249" y2="54" stroke="#000" stroke-width="1"/>
+	<text x="192" y="68.8" fill="#000" font-family="Verdana" font-size="12">title</text>
+	<text x="192" y="85.8" fill="#000" font-family="Verdana" font-size="12">color</text>
+	<text x="192" y="102.8" fill="#000" font-family="Verdana" font-size="12">position</text>
+</g>
+
+<!-- Entity LABEL -->
+<g class="page_0_PnDdDE8H diagram_page" visibility="visible">
+	<g>
+		<rect x="461" y="18" width="70" height="25" fill="#80cdc1" stroke="#80cdc1" stroke-width="0" opacity="1"/>
+		<rect x="461" y="43" width="70" height="59" fill="#c7eae5" stroke="#c7eae5" stroke-width="0" opacity="1"/>
+		<rect x="461" y="18" width="70" height="84" fill="none" stroke="#35978f" stroke-width="2" opacity="1"/>
+		<line x1="461" y1="43" x2="531" y2="43" stroke="#35978f" stroke-width="1"/>
+	</g>
+	<text x="477" y="35.75" fill="#000" font-family="Verdana" font-size="12">LABEL</text>
+	<text x="466" y="60.8" fill="#000" font-family="Verdana" font-size="12">labelCode</text>
+	<line x1="466" y1="63" x2="526" y2="63" stroke="#000" stroke-width="1"/>
+	<text x="466" y="77.8" fill="#000" font-family="Verdana" font-size="12">title</text>
+	<text x="466" y="94.8" fill="#000" font-family="Verdana" font-size="12">color</text>
+</g>
+</svg>
